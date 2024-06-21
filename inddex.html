@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript</title>
+<style>
+    
+</style>
+</head>
+<body>
+    <!-- <h1>Form Validation</h1>
+    <form action="">
+<label for="">
+    Enter Your Name
+</label>
+<input type="text" id="fullName" placeholder="User Name"><br>
+<label for="">
+    Email Address
+</label>
+<input type="email" id="email" placeholder="email@"><br>
+<input type="password"  id="password">
+<button onclick="validation()" type="submit">Submit</button>
+<p id="demo" ></p>
+</form>
+<h2>Practice</h2>
+<input type="number" name="" id="num1">
+<input type="number" name="" id="num2">
+<button onclick="add()">Add</button>
+<p id="result"></p> -->
+
+<div class="newdiv" id="newdiv" style="height: 200px; width:250px; background-color:red; margin-bottom:20px;"></div>
+
+<button id="result" onclick="newfunction()">Change Color</button>
+<script>
+    function newfunction(){
+
+var result=document.getElementById("newdiv");
+result.style.backgroundColor="blue";
+
+}
+    /*     
+function add(){
+var num1 = parseFloat(document.getElementById("num1").value);
+var num2 = parseFloat( document.getElementById("num2").value);
+
+if(!isNaN(num1) && !isNaN(num2)){
+    var sum = num1 + num2;
+document.getElementById("result").textContent = "result " + sum;
+}
+else{
+    document.getElementById("result").textContent= "result: invalid input";
+
+}
+}
+
+
+
+
+
+
+function validation(){
+    var fullName = document.getElementById("fullName").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+if(fullName == "" || email == "" || password == ""){
+alert("Fill the fields");
+}
+else{
+alert("Success");
+}
+} 
+
+var number =parseInt(prompt("Enter numbers between one to five"));
+switch(number){
+
+case 1:
+document.write("You type 1");
+break;
+case 2:
+document.write("You type 2");
+break;
+case 3:
+document.write("You type 3");
+break;
+case 4:
+document.write("You type 4");
+break;
+case 5:
+document.write("You type 4");
+break;
+default:
+document.write("You type wrong number");
+
+}
+*/
+for(var table =1;table <= 10; table++){
+document.write("2 * " +table + "=" + table * 2 + "<br>" );
+}
+
+for(var table =1;table <= 10; table++){
+    document.write("9 * " +table + "=" + table * 9 + "<br>" );
+    }
+//local Storage
+//iframe
+//image mapping    
+</script>
+
+</body>
+</html>

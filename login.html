@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <h1>Log in</h1>
+  
+
+    <label for="">User Email</label><br>
+    <input type="email" name="" id="uemail" placeholder="Enter Email"><br>
+    <label for="">User Password</label><br>
+    <input type="password" name="" id="pass" placeholder="Enter Password"><br>
+    <button type="submit" onclick="btnsubmit()">SubMit</button>
+</body>
+<script>
+    function btnsubmit(){
+        email =document.getElementById("uemail").value;
+        pass =document.getElementById("pass").value;
+
+       var naam =localStorage.getItem("Useremail");
+       var myPass =localStorage.getItem("Password");
+       
+    if(email == naam && pass == myPass){
+    
+    alert("Next Window login Successful");
+    window.location.href="after.html";
+    }
+    else{
+    alert("Provide right Information");
+    }
+    
+    }
+ 
+</script>
+</html>
